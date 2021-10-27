@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # Notify Plan Artifact to Github Pull Request
 from __future__ import print_function
 import os
