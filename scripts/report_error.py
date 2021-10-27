@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 from __future__ import print_function
 from jinja2 import Environment, FileSystemLoader
 import notify_github as gh
