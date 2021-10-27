@@ -32,4 +32,8 @@ RUN tfenv install 0.11.15 &&\
     tfenv install 0.13.7 &&\
     tfenv install 1.0.3 &&\
     tfenv use 0.11.15
+
+# https://www.docker.com/blog/docker-can-now-run-within-docker/
+VOLUME /var/lib/docker
+
 COPY scripts/ /usr/local/bin/

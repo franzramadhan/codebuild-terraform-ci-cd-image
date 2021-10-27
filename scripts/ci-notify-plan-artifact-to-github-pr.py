@@ -20,7 +20,7 @@ def cwd(path):
         os.chdir(oldpwd)
 
 
-if not os.path.isfile(os.getenv('TF_WORKING_DIR')+"/terraform.tfplan"):
+if not os.path.isfile(os.getenv('TF_WORKING_DIR', "")+"/terraform.tfplan"):
     print("terraform.tfplan not found. Skipping this step")
     sys.exit(0)
 

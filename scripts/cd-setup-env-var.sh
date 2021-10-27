@@ -38,8 +38,7 @@ echo "check if key exist and valid format"
 if [ -s ~/.ssh/id_rsa ]
 then
     chmod 400 ~/.ssh/id_rsa
-    ssh-keygen -l -f ~/.ssh/id_rsa
-    if [ $? -eq 0 ]
+    if ssh-keygen -l -f ~/.ssh/id_rsa
     then
         eval $(ssh-agent -s)
         ssh-add /root/.ssh/id_rsa
